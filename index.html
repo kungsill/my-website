@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="เว็บไซต์แนะนำตัว ผลงาน และช่องทางติดต่อ">
+  <title>ชื่อของคุณ | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">Kung<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="เปิด/ปิดเมนู">
+      <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav__menu">
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#work">ผลงาน</a>
+        <a href="#contact" class="btn btn--small">ติดต่อ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">สวัสดีครับ 👋 ผมชื่อ</p>
+          <h1>ชื่อของคุณ <span class="gradient">นามสกุล</span></h1>
+          <p class="hero__role">Web Developer &amp; UI Designer</p>
+          <p class="hero__desc">
+            ผมชอบสร้างเว็บไซต์ที่สวยงาม ใช้งานง่าย และรองรับทุกอุปกรณ์
+            เปลี่ยนไอเดียให้กลายเป็นประสบการณ์ดิจิทัลที่ผู้ใช้ประทับใจ
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn">ดูผลงาน</a>
+            <a href="#contact" class="btn btn--ghost">ติดต่อฉัน</a>
+          </div>
+        </div>
+        <div class="hero__avatar">
+          <div class="avatar">
+            <span>K</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">เกี่ยวกับฉัน</p>
+        <h2 class="section__title">รู้จักกันสักนิด</h2>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              ผมเป็นนักพัฒนาเว็บที่มีประสบการณ์ด้าน Front-end มากกว่า 3 ปี
+              หลงใหลในการออกแบบ UI ที่เรียบง่ายแต่ทรงพลัง และใส่ใจทุกรายละเอียด
+              ตั้งแต่ความเร็วในการโหลดไปจนถึงการเข้าถึงได้ของผู้ใช้ทุกกลุ่ม
+            </p>
+            <p>
+              นอกเวลางาน ผมชอบถ่ายภาพ อ่านหนังสือ และเรียนรู้เทคโนโลยีใหม่ ๆ
+              อยู่เสมอ
+            </p>
+
+            <ul class="stats">
+              <li><strong>3+</strong><span>ปีประสบการณ์</span></li>
+              <li><strong>20+</strong><span>โปรเจกต์</span></li>
+              <li><strong>15+</strong><span>ลูกค้า</span></li>
+            </ul>
+          </div>
+
+          <div class="about__skills">
+            <h3>ทักษะ</h3>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Figma</li>
+              <li>Responsive Design</li>
+              <li>Git</li>
+              <li>UI/UX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section id="work" class="section section--alt">
+      <div class="container">
+        <p class="eyebrow">ผลงาน</p>
+        <h2 class="section__title">โปรเจกต์ที่ภูมิใจ</h2>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card__thumb card__thumb--1">🛒</div>
+            <div class="card__body">
+              <h3>ร้านค้าออนไลน์</h3>
+              <p>เว็บไซต์ E-commerce พร้อมระบบตะกร้าสินค้าและชำระเงิน ออกแบบให้ใช้งานบนมือถือได้ลื่นไหล</p>
+              <ul class="tags tags--small">
+                <li>React</li><li>Node.js</li>
+              </ul>
+              <a href="#" class="card__link">ดูรายละเอียด →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__thumb card__thumb--2">📊</div>
+            <div class="card__body">
+              <h3>แดชบอร์ดวิเคราะห์ข้อมูล</h3>
+              <p>ระบบแสดงผลข้อมูลยอดขายแบบเรียลไทม์ ด้วยกราฟที่อ่านง่ายและปรับแต่งได้</p>
+              <ul class="tags tags--small">
+                <li>Vue</li><li>Chart.js</li>
+              </ul>
+              <a href="#" class="card__link">ดูรายละเอียด →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__thumb card__thumb--3">✈️</div>
+            <div class="card__body">
+              <h3>แอปวางแผนท่องเที่ยว</h3>
+              <p>ออกแบบ UI/UX สำหรับแอปวางแผนทริป ช่วยจัดตารางเดินทางและงบประมาณได้ในที่เดียว</p>
+              <ul class="tags tags--small">
+                <li>Figma</li><li>UI/UX</li>
+              </ul>
+              <a href="#" class="card__link">ดูรายละเอียด →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact">
+          <p class="eyebrow">ติดต่อ</p>
+          <h2 class="section__title">มาร่วมงานกันเถอะ</h2>
+          <p class="contact__desc">
+            มีโปรเจกต์ที่น่าสนใจ หรืออยากพูดคุยกัน ติดต่อได้ทุกช่องทางด้านล่างนี้เลยครับ
+          </p>
+
+          <div class="contact__list">
+            <a href="mailto:you@example.com" class="contact__item">
+              <span class="contact__icon">✉️</span>
+              <span>
+                <small>อีเมล</small>
+                you@example.com
+              </span>
+            </a>
+            <a href="tel:+66000000000" class="contact__item">
+              <span class="contact__icon">📞</span>
+              <span>
+                <small>โทรศัพท์</small>
+                000-000-0000
+              </span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">💻</span>
+              <span>
+                <small>GitHub</small>
+                github.com/username
+              </span>
+            </a>
+            <a href="https://line.me/" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">💬</span>
+              <span>
+                <small>LINE</small>
+                @yourline
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ชื่อของคุณ · สร้างด้วย HTML &amp; CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
